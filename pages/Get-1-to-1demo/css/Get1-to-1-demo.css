@@ -1,0 +1,622 @@
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    margin: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/*small*/
+@media (max-width:330px) {
+    .container {
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width:330px) {
+    .container {
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width:532px) {
+    .container {
+        width: 80%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 80%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/*medium*/
+@media (min-width:992px) {
+    .container {
+        width: 80%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/*large*/
+@media (min-width:1200px) {
+    .container {
+        width: 80%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+/* start conatct bar */
+.contact-bar{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 25px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    gap:10px;
+   
+}
+.contact-bar .country-contact{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 10px;
+    padding: 0px 10px;
+
+}
+.contact-bar .country-contact:not(.contact-bar .country-contact:last-child){
+ border-right: black solid 2px;
+
+    
+}
+.contact-bar .country-contact i{
+    color: #440099;
+    transform: rotate(-40deg);
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.contact-bar .country-contact p{
+   font-size: 15px;
+   font-weight: 500;
+}
+@media(max-width:502px){
+    .contact-bar{
+        padding-bottom: 10px;
+    }
+}
+/* end conatct bar */
+
+/* start nav-bar */
+.nav-bar{
+    display: flex;
+    width: 100%;
+    padding: 0px 0px;
+    justify-content: space-between;
+    border-bottom:#c0bdbd solid 1px;
+    position: sticky;
+    top: 58px;
+    background-color: white;
+    z-index: 1;
+}
+.nav-bar .first-part{
+    display: flex;
+    align-items: center;
+}
+.nav-bar .first-part .link ul{
+    display: flex;
+    padding: 0px;
+
+}
+.nav-bar img{
+    padding: 20px 25px;
+    width: 140px;
+}
+.nav-bar .link ul a{
+text-decoration: none;
+padding: 25px 10px;
+color: black;
+
+}
+
+.nav-bar .link ul a:hover{
+    background-color: #F2F2F2;
+
+}
+.buttons{
+    margin: 20px 50px;
+}
+.buttons a:first-child{
+    margin-right: 5px;
+    padding: 13px 20px;
+    background-color: #440099;
+    color: white;
+    border-radius:12px;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    transition-duration: 0.2s;
+}
+.nav-bar .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin: 20px 0px;
+}
+.nav-bar .buttons a:first-child:hover{
+    transform: scale3d(0.8,0.8,0.8);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.buttons a:last-of-type{
+    padding: 12px 20px;
+    background-color:white;
+    color: #440099;
+    border: #440099 solid 2px;
+    border-radius:12px;
+    font-size: 15px;
+    font-weight: 500;
+    transition-duration: 0.2s;
+    margin-right:25px ;
+}
+.nav-bar .buttons a:last-of-type:hover{
+    transform: scale3d(0.8,0.8,0.8);
+    transition-duration: 0.2s;
+    margin-right: 2px;
+    background-color:#440099;
+    color: white;
+    cursor: pointer;
+    margin-right:25px ;
+}
+
+
+.nav-bar .link{
+    display: block;
+}
+.nav-bar .buttons ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: calc(50% + 15px);
+    background-color: #f6f6f6;
+    min-width: 200px;
+    display: none;
+    z-index: 1;
+} 
+
+.nav-bar .buttons ul li a {
+    margin: 5px 0px;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-bar .buttons ul li a:hover {
+    padding-left: 25px;
+}
+
+
+.nav-bar i{
+    display:none;
+    font-size: 40px;
+}
+
+@media(max-width:1200px){
+    .nav-bar .buttons{
+        margin: 20px 0px;
+    }
+}
+
+@media(max-width:1180px){
+    .nav-bar .link{
+        display: none;
+    }
+    .nav-bar i{
+        display:block;
+        font-size: 40px;
+    }
+}
+
+@media(max-width:1100px){
+    .nav-bar .link{
+        display: none;
+    }
+    .nav-bar i{
+        display:block;
+        font-size: 40px;
+    }
+    .nav-bar .icon:hover ul{
+        display: block;
+    }
+}
+
+@media(max-width:803px){
+    .nav-bar{
+        padding: 15px 0px;
+    }
+}
+@media(max-width:678px){
+    .nav-bar .buttons a{
+        display: none;
+    }
+}
+/* end nav-bar */
+
+/* start landing */
+.landing{
+    position: relative;
+    top: 70px;
+}
+.landing .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    width: 80%;
+}
+.landing p:first-child{
+    font-size: 45px;
+    font-weight:500;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.landing p:last-child{
+    font-size: 25px;
+    color: #8c8989;
+    text-align: center;
+}
+@media (max-width:768px){
+    .landing p:first-child{
+        font-size: 40px;
+    }
+    .landing p:last-child{
+        font-size: 20px;
+    }
+    .landing .content{
+        margin: 20px;
+    }
+}
+/* end landing */
+
+/* start request section */
+.reqSec .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:100px ;
+    margin-bottom: 30px;
+    gap: 10px;
+
+}
+.reqSec .content .left-part{
+    height: 900px;
+    width: 50%;
+    background-color: #440099;
+    border-radius: 20px;
+    color: white;
+    padding: 80px 40px;
+    box-shadow: 12px 12px 15px -14px rgba(0, 0, 0, 0.53) ;
+  
+}
+
+.reqSec .content .left-part >p{
+    font-size: 25px;
+}
+.reqSec .content .left-part .first-check,.second-check,.third-check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reqSec .content .left-part i{
+    padding: 0px 15px;
+}
+.reqSec .content .textforms{
+    height: 900px;
+    width: 50%;
+    border-radius: 20px;
+    color: white;
+    padding: 80px 40px;
+    box-shadow: 1px 1px 14px 0px rgba(0, 0, 0, 0.53);
+    color: black;
+}
+
+.reqSec .content .textforms form:first-child{
+    display: grid;
+    grid-template-columns: 4;
+    grid-row:5 ;
+    grid-template-areas:"FN FN LN LN"
+                        "EM EM EM EM"
+                        "PN PN PN PN"
+                        "BN BN BR BR"
+                        "CN CN CN CN";
+    column-gap: 50px;
+    row-gap: 20px;
+}
+.reqSec .content .textforms form  input{
+    border-radius: 10px;
+    height: 45px;
+    border:#c0bdbd solid 2px;
+    width: 100%;
+}
+.reqSec .content .textforms form  label{
+   font-size: 18px;
+   font-weight:400;
+   padding-bottom: 5px;
+   width: 100%;
+}
+.reqSec .content .textforms form  label span{
+    font-size: 28px;
+    color: red;
+}
+.reqSec .content .textforms form .firstName{
+    grid-area: FN;
+    display: flex;
+    flex-direction: column;
+}
+.reqSec .content .textforms form .lastname{
+    grid-area: LN;
+    display: flex;
+    flex-direction: column;
+}
+.reqSec .content .textforms form .Email{
+    grid-area: EM;
+    display: flex;
+    flex-direction: column;
+}
+.reqSec .content .textforms form .Phone-number{
+    grid-area: PN;
+    display: flex;
+    flex-direction: column;
+}
+.reqSec .content .textforms form .Business-name{
+    grid-area: BN;
+    display: flex;
+    flex-direction: column;
+}
+.reqSec .content .textforms form .branches{
+    grid-area: BR;
+    display: flex;
+    flex-direction: column;
+}
+.reqSec .content .textforms form .Country-Name{
+    grid-area: CN;
+    display: flex;
+    flex-direction: column;
+}
+.reqSec .content .textforms form:last-of-type .first-checkBox , .second-checkBox{
+    margin-top: 20px;
+}
+.reqSec .content .textforms form:last-of-type input{
+    margin: 0px;
+    padding: 0%;
+    height: 15px;
+    width: 20px;
+}
+
+.reqSec .content .textforms form:last-of-type .submit input{
+    width: 130px;
+    margin: 50px 0px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media (max-width:1100px){
+    .reqSec .content{
+        flex-direction: column;
+    }
+    .reqSec .content .left-part, .reqSec .content .textforms {
+        width: 100%;
+    }
+}
+/* end request section */
+/* start footer */
+.footer{
+    background-color: #F2F2F2;
+    padding: 80px 30px 20px;
+
+}
+.footer .content{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 20px;
+}
+
+.footer .content .sec1{
+    flex-basis: 45%;
+}
+
+.footer .content .sec2{
+    flex-basis: 45%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around; 
+}
+
+.footer .content .sec2 .foodics,.Products ,.Resources,.Legal{
+    display: flex;
+    flex-direction: column;
+}
+.footer .content .sec2 p{
+    padding: 0%;
+    margin: 0px;
+    margin-bottom: 10px;
+    color:#8c8989;
+    font-size: 15px;
+    font-weight: 500;
+}
+.footer .content .sec2 a{
+    font-size: 14px;
+    color: #b5b2b2;
+    padding: 5px 0px;
+}
+
+.footer .content .sec3{
+    flex-basis: 45%;
+}
+
+.footer .content .sec3 p{
+    color: #b5b2b2;
+    font-size: 14px;
+    line-height: 30px;
+}
+.footer .content .sec3 .logo{
+    display: flex;
+    width: 100%;
+    
+}
+.footer .content .sec3 .logo img{
+    padding-top: 20px;
+    width:17% ;
+    padding-left: 10px;    
+   
+}
+.footer .content .sec3 .logo img:first-child{
+    width: 50%;
+}
+
+.footer .content .sec4{
+    flex-basis: 45%;
+    
+}
+.footer .content .sec4 .text p:first-child{
+    font-size: 14px;
+    color:#8c8989;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+}
+.footer .content .sec4 .text p:last-child{
+    font-size: 14px;
+    color:#a5a1a1;
+    padding-bottom: 15px;
+    margin: 0px;
+}
+.footer .content .sec4 .textForm form {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    grid-template-areas:"FN LN"
+                        "EM EM";    
+    row-gap: 15px;
+    column-gap: 60px;
+}
+.footer .content .sec4 .textForm .firstName{
+    grid-area: FN;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer .content .sec4 .textForm label{
+    font-size: 15px;
+    color:#8c8989;
+    padding-bottom: 5px;
+}
+.footer .content .sec4 .textForm label span{
+    color: red;
+    font-size: 18px;
+}
+.footer .content .sec4 .textForm input{
+    border-radius: 15px;
+    height: 40px;
+    border:#c0bdbd solid 1px;
+    width: 100%;
+}
+.footer .content .sec4 .textForm .lastName{
+    grid-area: LN;
+    display: flex;
+    flex-direction: column;
+}
+.footer .content .sec4 .textForm .Email{
+    grid-area: EM;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer .content .sec4 .checkbox form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.footer .content .sec4 .checkbox form label{
+    font-size: 15px;
+    color:#8c8989;
+}
+.footer .content .sec4 .checkbox form .checkbox1,.checkbox2{
+    margin: 25px 0px ;
+}
+
+.footer .content .sec4 input[type="button"]{
+    cursor: pointer;
+    border-radius: 15px;
+    height: 40px;
+    width: 110px;
+    border: none;
+    background-color: #440099;
+    color: white;
+    font-size: 15px;
+    font-weight:400;
+    margin-top: 40px;
+}
+
+.footer .copyRights{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.footer .copyRights .copyRight{
+    font-size: 15px;
+    color:#8c8989;
+}
+.footer .copyRights .icons i{
+    width: 40px;
+    font-size: 20px;
+    color: #8c8989;
+    cursor: pointer;
+}
+.footer .copyRights .icons i:hover{
+    color:#440099;
+}
+
+@media (max-width:768px){
+    .footer .content .sec1,.footer .content .sec2,.footer .content .sec3,.footer .content .sec4,.footer .content .sec5{
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+/* end footer */

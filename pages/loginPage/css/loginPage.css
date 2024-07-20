@@ -1,0 +1,179 @@
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    margin: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/*small*/
+@media (max-width:330px) {
+    .container {
+        width: 80%;;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .content{
+        width: 85%;
+    }
+}
+
+@media (min-width:330px) {
+    .container {
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .content{
+        width: 75%;
+    }
+}
+
+@media (min-width:532px) {
+    .container {
+        width: 80%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .content{
+        width: 70%;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 80%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .content{
+        width: 60%;
+    }
+}
+
+/*medium*/
+@media (min-width:992px) {
+    .container {
+        width: 80%;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 50%;
+    }
+    .content{
+        width: 50%;
+    }
+}
+
+/*large*/
+@media (min-width:1200px) {
+    .container {
+        width: 80%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .login .content{
+        width: 40%;
+    }
+}
+
+
+/* start login page */
+.login .content{
+    position: absolute;
+    padding: 90px 0px;
+    left: 57%;
+    transform: translateX(-60%);
+}
+.login .content .text{
+    text-align: center;
+}
+.login .content .text img{
+    width: 160px;
+}
+.login .content .text p{
+    font-size: 20px;
+}
+.login .loginCard{
+    padding: 30px;
+    box-shadow: 1px 1px 6px -2px rgba(0, 0, 0, 0.53);
+    width: 100%;
+    box-sizing: border-box;
+}
+.login .loginCard form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.login .loginCard form .accountnumber{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+.login .content .loginCard label{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.login .content .loginCard input{
+    border-radius: 10px;
+    height: 32px;
+    background-color:azure;
+    border: gray solid 1px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.login .content .loginCard .Email input{
+    background-color: white;
+}
+.login .loginCard form .Email{
+    flex-direction: column;
+    display: flex;
+    width: 100%; 
+    padding: 10px;
+}
+.login .loginCard form .password{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+.login .loginCard form .submit{
+    background-color: #440099;
+    width: 100%;
+    color: white;
+    margin: 30px 0px 0px;
+    height: 50px;
+}
+.login .last-part {
+display: flex;
+flex-direction: column;
+align-items:start;
+justify-content: center;
+
+}
+
+.login .last-part a{
+    padding: 10px 0px ;
+}
+
+.login .last-part a:hover{
+    text-decoration: underline;
+}
+
+/* end login page */
